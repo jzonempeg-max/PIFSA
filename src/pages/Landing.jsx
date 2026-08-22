@@ -34,7 +34,7 @@ export default function Landing() {
       {/* Header */}
       <div className="header">
         <div className="logo">
-          <img src="images/logo.png" alt="PIFSA seal" style={{ height: 44, width: 'auto', verticalAlign: 'middle', marginRight: 10 }} />
+          <img src="/images/logo.png" alt="PIFSA seal" style={{ height: 44, width: 'auto', verticalAlign: 'middle', marginRight: 10 }} />
           <span style={{ verticalAlign: 'middle' }}>PIFSA</span>
         </div>
         <div className="nav">
@@ -85,7 +85,7 @@ export default function Landing() {
 
       {/* About */}
       <section id="about">
-        <img src="images/logo.png" alt="" className="about-watermark" aria-hidden="true" />
+        <img src="/images/logo.png" alt="" className="about-watermark" aria-hidden="true" />
         <div className="section-header">
           <h2 className="section-title">About PIFSA</h2>
           <p className="section-subtitle">The Philippine Investigation and Forensic Science Academy is the leading institution for professional development in investigative sciences.</p>
@@ -215,7 +215,7 @@ export default function Landing() {
         </div>
         <div className="compass-wrap" ref={wrapRef}>
           <div className="compass-sticky">
-            <img src="images/justice.png" alt="" className="process-watermark" aria-hidden="true" />
+            <img src="/images/justice.png" alt="" className="process-watermark" aria-hidden="true" />
             <div className="compass-progress">
               <div className="cprog-bar"><div className="cprog-fill" style={{ width: `${(active + 1) / PROCESS_STEPS.length * 100}%` }} /></div>
               <div className="cprog-label"><span>{String(active + 1).padStart(2, '0')}</span> / 04</div>
