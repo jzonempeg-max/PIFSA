@@ -31,7 +31,7 @@ export default function Login() {
     <div className="auth-screen">
       <div className="auth-card">
         <div className="auth-brand">
-          <img src="images/logo.png" alt="PIFSA" />
+          <img src="/images/logo.png" alt="PIFSA" />
           <span>PIFSA Portal</span>
         </div>
         <h1 className="auth-title">Sign in</h1>
