@@ -24,7 +24,7 @@ export default function Portal() {
     <div className="portal">
       <aside className={'portal-side' + (navOpen ? ' open' : '')}>
         <div className="portal-brand">
-          <img src="images/logo.png" alt="PIFSA" />
+          <img src="/images/logo.png" alt="PIFSA" />
           <div>
             <div className="portal-brand-name">PIFSA</div>
             <div className="portal-brand-sub">Marketing Portal</div>
