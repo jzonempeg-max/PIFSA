@@ -66,19 +66,19 @@ export const PROCESS_STEPS = [
 ];
 
 export const GALLERY = [
-  { src: 'images/gallery-1.jpg', cap: 'Training seminar in session' },
-  { src: 'images/gallery-2.jpg', cap: 'Certificate ceremony' },
-  { src: 'images/gallery-3.jpg', cap: 'Partnership signing' },
-  { src: 'images/gallery-4.jpg', cap: 'Cybercrime workshop' },
-  { src: 'images/gallery-5.jpg', cap: 'Fraud investigation session' },
-  { src: 'images/gallery-6.jpg', cap: 'Forensic training' },
-  { src: 'images/gallery-7.jpg', cap: 'Investigative interviewing' },
-  { src: 'images/gallery-8.jpg', cap: 'Hands-on lab work' },
-  { src: 'images/gallery-9.jpg', cap: 'Group certification' },
-  { src: 'images/gallery-10.jpg', cap: 'Expert-led lecture' },
-  { src: 'images/gallery-11.jpg', cap: 'Practical exercise' },
-  { src: 'images/gallery-12.jpg', cap: 'Seminar attendees' },
-  { src: 'images/gallery-13.jpg', cap: 'Academy event' },
+  { src: '/images/gallery-1.jpg', cap: 'Training seminar in session' },
+  { src: '/images/gallery-2.jpg', cap: 'Certificate ceremony' },
+  { src: '/images/gallery-3.jpg', cap: 'Partnership signing' },
+  { src: '/images/gallery-4.jpg', cap: 'Cybercrime workshop' },
+  { src: '/images/gallery-5.jpg', cap: 'Fraud investigation session' },
+  { src: '/images/gallery-6.jpg', cap: 'Forensic training' },
+  { src: '/images/gallery-7.jpg', cap: 'Investigative interviewing' },
+  { src: '/images/gallery-8.jpg', cap: 'Hands-on lab work' },
+  { src: '/images/gallery-9.jpg', cap: 'Group certification' },
+  { src: '/images/gallery-10.jpg', cap: 'Expert-led lecture' },
+  { src: '/images/gallery-11.jpg', cap: 'Practical exercise' },
+  { src: '/images/gallery-12.jpg', cap: 'Seminar attendees' },
+  { src: '/images/gallery-13.jpg', cap: 'Academy event' },
 ];
 
 export const HERO_PILLS = [
