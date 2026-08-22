@@ -1,0 +1,96 @@
+/* ============ AUTH (login) ============ */
+.auth-screen { min-height: 100vh; display: grid; place-items: center; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); padding: 24px; }
+.auth-card { width: 100%; max-width: 400px; background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 24px 60px rgba(0,0,0,0.3); }
+.auth-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+.auth-brand img { height: 40px; }
+.auth-brand span { font-weight: 700; color: var(--navy); font-size: 18px; letter-spacing: 0.5px; }
+.auth-title { font-size: 26px; color: var(--navy); margin-bottom: 6px; }
+.auth-sub { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+.auth-field { width: 100%; padding: 13px 15px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; margin-bottom: 14px; font-family: inherit; }
+.auth-field:focus { outline: none; border-color: var(--gold); }
+.auth-error { color: #c0392b; font-size: 13px; margin-bottom: 14px; }
+.auth-btn { width: 100%; background: var(--navy); color: #fff; border: none; padding: 14px; border-radius: 8px; font-weight: 700; font-size: 15px; cursor: pointer; transition: background 0.3s; }
+.auth-btn:hover { background: var(--gold); }
+.auth-btn:disabled { opacity: 0.7; cursor: default; }
+.auth-back { display: block; text-align: center; margin-top: 18px; color: var(--muted); font-size: 13px; text-decoration: none; }
+.auth-back:hover { color: var(--navy); }
+
+/* ============ PORTAL SHELL ============ */
+.portal { display: flex; min-height: 100vh; background: #f6f7f9; }
+.portal-side { width: 260px; background: var(--navy); color: #fff; display: flex; flex-direction: column; position: fixed; top: 0; bottom: 0; left: 0; z-index: 40; transition: transform 0.3s; }
+.portal-brand { display: flex; align-items: center; gap: 12px; padding: 24px 22px; border-bottom: 0.5px solid rgba(255,255,255,0.12); }
+.portal-brand img { height: 38px; }
+.portal-brand-name { font-weight: 700; font-size: 16px; letter-spacing: 0.5px; }
+.portal-brand-sub { font-size: 11px; color: var(--gold-2); text-transform: uppercase; letter-spacing: 1px; }
+.portal-nav { flex: 1; padding: 16px 12px; display: flex; flex-direction: column; gap: 4px; }
+.portal-nav-item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: none; border: none; color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 500; text-align: left; border-radius: 8px; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.portal-nav-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.portal-nav-item.active { background: var(--gold); color: #fff; }
+.portal-nav-icon { font-size: 16px; }
+.portal-user { padding: 18px 22px; border-top: 0.5px solid rgba(255,255,255,0.12); }
+.portal-user-email { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 10px; word-break: break-all; }
+.portal-signout { width: 100%; background: rgba(255,255,255,0.1); color: #fff; border: none; padding: 10px; border-radius: 6px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.portal-signout:hover { background: rgba(255,255,255,0.18); }
+
+.portal-main { flex: 1; margin-left: 260px; display: flex; flex-direction: column; }
+.portal-top { background: #fff; border-bottom: 1px solid #eaecef; padding: 20px 32px; display: flex; align-items: center; gap: 16px; position: sticky; top: 0; z-index: 30; }
+.portal-top h1 { font-size: 20px; color: var(--navy); font-weight: 700; }
+.portal-hamburger { display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 4px; }
+.portal-hamburger span { display: block; width: 22px; height: 2.5px; background: var(--navy); border-radius: 2px; }
+.portal-content { padding: 32px; flex: 1; }
+.portal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 35; }
+
+/* ============ SHARED PANELS ============ */
+.notice { background: #fff8e6; border: 1px solid #f0e0b0; color: #8a6d1a; padding: 14px 18px; border-radius: 10px; font-size: 13px; margin-bottom: 24px; }
+.notice code { background: rgba(0,0,0,0.06); padding: 1px 6px; border-radius: 4px; font-size: 12px; }
+.panel { background: #fff; border: 1px solid #eaecef; border-radius: 14px; padding: 24px; margin-bottom: 24px; }
+.panel h3 { font-size: 16px; color: var(--navy); margin-bottom: 6px; }
+.panel-loading { padding: 40px; text-align: center; color: var(--muted); }
+.muted { color: var(--muted); }
+
+/* ============ CRM ============ */
+.funnel { display: flex; gap: 0; margin-bottom: 32px; flex-wrap: wrap; }
+.funnel-stage { position: relative; flex: 1; min-width: 130px; background: #fff; border: 1px solid #eaecef; border-radius: 12px; padding: 20px 16px; text-align: center; cursor: pointer; transition: all 0.2s; margin-right: 20px; }
+.funnel-stage:last-child { margin-right: 0; }
+.funnel-stage:hover { border-color: var(--gold); transform: translateY(-2px); }
+.funnel-stage.active { background: var(--navy); border-color: var(--navy); }
+.funnel-stage.active .funnel-count { color: var(--gold-2); }
+.funnel-stage.active .funnel-label { color: rgba(255,255,255,0.85); }
+.funnel-count { font-size: 30px; font-weight: 700; color: var(--navy); }
+.funnel-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-top: 4px; }
+.funnel-arrow { position: absolute; right: -14px; top: 50%; transform: translateY(-50%); color: var(--gold); font-weight: 700; z-index: 1; }
+
+.table-head-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.table-head-row h3 { font-size: 16px; color: var(--navy); }
+.chip-clear { background: none; border: 1px solid var(--line); color: var(--muted); padding: 6px 12px; border-radius: 100px; font-size: 12px; cursor: pointer; }
+.table-wrap { background: #fff; border: 1px solid #eaecef; border-radius: 14px; overflow: auto; }
+.crm-table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
+.crm-table th { text-align: left; padding: 14px 18px; background: #fafbfc; color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 1px solid #eaecef; }
+.crm-table td { padding: 14px 18px; border-bottom: 1px solid #f0f2f4; color: #2a2a2a; }
+.crm-table tr:last-child td { border-bottom: none; }
+.empty-row { text-align: center; color: var(--muted); padding: 32px !important; }
+.source-tag { font-size: 11px; background: var(--beige); color: #9c7a3c; padding: 4px 10px; border-radius: 100px; }
+.stage-select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; font-size: 13px; font-family: inherit; background: #fff; cursor: pointer; }
+.stage-select:focus { outline: none; border-color: var(--gold); }
+
+/* ============ DASHBOARD ============ */
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-bottom: 28px; }
+.kpi-card { background: #fff; border: 1px solid #eaecef; border-left: 3px solid var(--gold); border-radius: 12px; padding: 24px; }
+.kpi-value { font-size: 34px; font-weight: 700; color: var(--navy); }
+.kpi-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 6px; }
+.bar-chart { display: flex; flex-direction: column; gap: 14px; margin-top: 18px; }
+.bar-row { display: flex; align-items: center; gap: 16px; }
+.bar-label { width: 110px; font-size: 13px; color: var(--muted); }
+.bar-track { flex: 1; height: 22px; background: #f0f2f4; border-radius: 6px; overflow: hidden; }
+.bar-fill { height: 100%; background: linear-gradient(90deg, var(--navy), var(--gold)); border-radius: 6px; transition: width 0.6s; }
+.bar-count { width: 40px; text-align: right; font-weight: 700; color: var(--navy); font-size: 14px; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 860px) {
+  .portal-side { transform: translateX(-100%); }
+  .portal-side.open { transform: translateX(0); }
+  .portal-main { margin-left: 0; }
+  .portal-hamburger { display: flex; }
+  .funnel-stage { margin-right: 0; margin-bottom: 12px; min-width: calc(50% - 6px); flex: 0 0 calc(50% - 6px); }
+  .funnel-arrow { display: none; }
+}
