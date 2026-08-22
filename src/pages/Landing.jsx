@@ -42,7 +42,10 @@ export default function Landing() {
             <a key={id} onClick={() => go(id)}>{id[0].toUpperCase() + id.slice(1)}</a>
           ))}
         </div>
-        <button className="cta-header" onClick={() => go('contact')}>Enroll Now</button>
+        <div className="header-actions">
+          <button className="cta-portal" onClick={() => navigate('/login')}>Portal Login</button>
+          <button className="cta-header" onClick={() => go('contact')}>Enroll Now</button>
+        </div>
         <button
           className={'nav-toggle' + (menuOpen ? ' open' : '')}
           aria-label="Open menu"
@@ -57,6 +60,7 @@ export default function Landing() {
           <a key={id} onClick={() => go(id)}>{id[0].toUpperCase() + id.slice(1)}</a>
         ))}
         <button className="mobile-nav-cta" onClick={() => go('contact')}>Enroll Now</button>
+        <button className="mobile-nav-portal" onClick={() => { setMenuOpen(false); navigate('/login'); }}>Portal Login</button>
       </div>
       {menuOpen && <div className="nav-backdrop open" onClick={() => setMenuOpen(false)} />}
 
